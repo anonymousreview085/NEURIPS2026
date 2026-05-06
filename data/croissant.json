@@ -1,0 +1,226 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "fileProperty": "cr:fileProperty",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "WomenSRH-Euphemism",
+  "description": "A dataset of euphemistic terms used in sexual and reproductive health (SRH) questions across 7 Indonesian regional languages (Aceh, Betawi, Bugis, Indonesian, Javanese, Minangkabau, Sundanese), paired with their plain-language (direct) equivalents. The dataset supports benchmarking LLMs on health-related questions containing euphemistic language.",
+  "url": "https://github.com/anonymousreview085/NEURIPS26",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "datePublished": "2026",
+  "inLanguage": [
+    "ace",
+    "bew",
+    "bug",
+    "id",
+    "jv",
+    "min",
+    "su"
+  ],
+  "keywords": [
+    "euphemism",
+    "women's sexual reproductive health",
+    "Indonesian regional languages",
+    "benchmark",
+    "low-resource languages",
+    "multilingualism"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "anonymousreview085",
+    "url": "https://github.com/anonymousreview085"
+  },
+  "citeAs": "@article{YOUR_CITATION_KEY, title={...}, author={...}, year={2026}}",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "euphemismTerms_dataset-file",
+      "name": "euphemismTerms_dataset.csv",
+      "description": "CSV file containing unique euphemism terms per language with their direct plain-language equivalents.",
+      "contentUrl": "https://raw.githubusercontent.com/anonymousreview085/NEURIPS26/main/data/euphemismTerms_dataset.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "dccd3a7f39d7a36390add4e74b13f27d38518e8069949f506f2373b777c44224"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "euphemism-terms",
+      "name": "euphemism_terms",
+      "description": "Unique euphemism terms per language with direct equivalents.",
+      "key": {
+        "@id": "euphemism-terms/EuphemismID"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/EuphemismID",
+          "name": "EuphemismID",
+          "description": "Globally unique identifier for each euphemism term (e.g. E-00001).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "EuphemismID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/lang",
+          "name": "lang",
+          "description": "Regional language code: aceh, betawi, bugis, indonesia, jawa, minang, or sunda.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "lang"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/topic",
+          "name": "topic",
+          "description": "Medical topic of the question in Indonesian (e.g. Kehamilan, Menstruasi).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "topic"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/topicEnglish",
+          "name": "topicEnglish",
+          "description": "Medical topic in English (e.g. Pregnancy, Menstruation).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "topicEnglish"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/EuphemismTerm",
+          "name": "EuphemismTerm",
+          "description": "The euphemistic expression used in the regional language.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "EuphemismTerm"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "euphemism-terms/DirectTerm",
+          "name": "DirectTerm",
+          "description": "The plain-language (direct) equivalent of the euphemism.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "euphemismTerms_dataset-file"
+            },
+            "extract": {
+              "column": "DirectTerm"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataLimitations": "We identify euphemistic terms from 1,050 medical questions in each language and do not claim that this sample is representative of all regional linguistic variations.",
+  "rai:dataBiases": "The dataset covers 7 Indonesian languages (Acehnese, Betawi, Buginese, Indonesian, Javanese, Minangkabau, and Sundanese). Euphemisms were annotated by human annotators using data from an online medical Q&A platform, Alodokter, which may introduce some degree of subjectivity across annotators.",
+  "rai:personalSensitiveInformation": "The dataset does not contain any patient identifiers or doctors’ names. No personally identifiable information (PII) is included.",
+  "rai:dataUseCases": "Our dataset can be used to evaluate the ability of LLMs to handle euphemistic questions in women’s sexual and reproductive health across seven Indonesian languages.",
+  "rai:dataSocialImpact": "Positive impact: This dataset enables rigorous evaluation of large language models (LLMs) in handling euphemistic expressions in women’s sexual and reproductive health queries, particularly in low-resource Indonesian languages that are often underrepresented in existing benchmarks.\nRisks: The dataset could be misused for generating or interpreting sensitive medical information without proper clinical validation, or for deploying AI systems in healthcare settings without appropriate oversight. Additionally, annotation of euphemisms may involve subjective interpretation across annotators.\nMitigation: The dataset is released under a non-commercial research license (CC BY-NC 4.0) and is intended strictly for research purposes. No personally identifiable information (PII) is included. Users are encouraged to use the dataset responsibly and avoid clinical or high-stakes applications without expert validation.",
+  "rai:hasSyntheticData": false,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://www.alodokter.com/komunitas/topik",
+      "prov:label": "Alodokter-MedicalQA",
+      "sc:license": "CC-BY-NC",
+      "prov:wasAttributedTo": {
+        "@id": "https://www.alodokter.com",
+        "prov:label": "Alodokter"
+      }
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q109719325"
+      },
+      "prov:label": "Euphemism Annotation",
+      "sc:description": "Human annotators for each regional language annotate each QA instance by identifying euphemistic terms and providing their corresponding direct expressions."
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q109719325"
+      },
+      "prov:label": "Translation",
+      "sc:description": "Native speakers translated the original questions from the Alodokter QA dataset into each regional language."
+    }
+  ]
+}
