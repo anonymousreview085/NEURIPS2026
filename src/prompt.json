@@ -1,0 +1,44 @@
+[
+  {
+    "language": "indonesia",
+    "desc": "Seorang pasien wanita asal Indonesia mengajukan pertanyaan kepada Anda terkait kesehatan seksualnya.",
+    "languageForcing": "Anda harus menjawabnya dalam bahasa Indonesia.",
+    "main": "Jawablah pertanyaan berikut dengan penjelasan yang sopan dan mudah dipahami, seolah Anda sedang menjelaskan langsung kepada pasien."
+  },
+  {
+    "language": "jawa",
+    "desc": "Ana pasien wadon saka Jawa takon marang sampeyan soal kesehatan seksualé.",
+    "languageForcing": "Sampeyan kudu njawab nganggo basa Jawa.",
+    "main": "Wangsulana pitakoné kanthi basa sing sopan lan gampang dimangertèni, kaya déné sampeyan ngomong langsung karo pasiené."
+  },
+  {
+    "language": "sunda",
+    "desc": "Aya hiji pasien awéwé asal Sunda nu nanyakeun hal ngeunaan kaséhatan seksualna ka anjeun.",
+    "languageForcing": "Anjeun kedah ngajawab nganggo basa Sunda.",
+    "main": "Mangga jawabanana dijelaskeun ku basa nu sopan tur gampang kaharti, saolah-olah anjeun keur ngajelaskeun langsung ka pasienna."
+  },
+  {
+    "language": "minang",
+    "desc": "Urang awak perempuan dari Minang baratanyo ka ang mengenai kesehatan seksualnyo.",
+    "languageForcing": "Ang harus manjawo bana jo baso Minang.",
+    "main": "Jawablah pertanyaan ko dengan sopan jo jelas, seolah-olah ang sedang babicaro langsung jo pasiennyo."
+  },
+  {
+    "language": "aceh",
+    "desc": "Gopnyan ureuëng inong dari Aceh lon tanyakan meunan masalah kesehatan seksual.",
+    "languageForcing": "Gob lé wajib menjawab nyan ngon bahasa Aceh.",
+    "main": "Jawab lon pertanyaan nyan ngon bahasa sopan dan mudah pahah, seolah gob lé neujak droe-droe ka pasien."
+  },
+  {
+    "language": "bugis",
+    "desc": "Adae’ makkunrai ri Bugis mappoji’ pertanyaan rilakkoe nasaba’ kesehatanna.",
+    "languageForcing": "Iye’ wajib majawab pake basa Bugis.",
+    "main": "To jawabbakae’ pertanyaan e’ nasaba’ ade’na, maddécéngngi nasaba’ engka makkita langsung ri pasienna."
+  },
+  {
+    "language": "betawi",
+    "desc": "Ada cewek dari Betawi nanya soal kesehatan seksualnya ke lu.",
+    "languageForcing": "Lu mesti jawabnya pake bahasa Betawi.",
+    "main": "Jawab pertanyaannya dengan gaya yang sopan dan gampang dimengerti, kayak lagi ngobrol langsung sama pasiennya."
+  }
+]

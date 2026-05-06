@@ -1,0 +1,13 @@
+# Python 3.9+
+# pip install -r requirements.txt
+
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.13.1
+openpyxl==3.1.5
+openai==2.9.0
+google-generativeai==0.8.5
+huggingface-hub==0.36.0
+transformers==4.57.3
+python-dotenv==1.2.1
+tqdm==4.67.1
