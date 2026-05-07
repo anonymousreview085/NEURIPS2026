@@ -46,8 +46,8 @@
   },
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
-  "name": "WomenSRH-Euphemism",
-  "description": "A dataset of euphemistic terms used in sexual and reproductive health (SRH) questions across 7 Indonesian regional languages (Aceh, Betawi, Bugis, Indonesian, Javanese, Minangkabau, Sundanese), paired with their plain-language (direct) equivalents. The dataset supports benchmarking LLMs on health-related questions containing euphemistic language.",
+  "name": "Euphemism-SRH",
+  "description": "Euphemism-SRH: A dataset of euphemistic terms used in women's sexual and reproductive health (SRH) questions across Indonesian + 6 regional languages (Aceh, Betawi, Buginese, Javanese, Minangkabau, and Sundanese), paired with their plain-language (direct) equivalents. The dataset supports benchmarking LLMs on health-related questions containing euphemistic language.",
   "url": "https://github.com/anonymousreview085/NEURIPS26",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "datePublished": "2026",
@@ -189,9 +189,9 @@
     }
   ],
   "rai:dataLimitations": "We identify euphemistic terms from 1,050 medical questions in each language and do not claim that this sample is representative of all regional linguistic variations.",
-  "rai:dataBiases": "The dataset covers 7 Indonesian languages (Acehnese, Betawi, Buginese, Indonesian, Javanese, Minangkabau, and Sundanese). Euphemisms were annotated by human annotators using data from an online medical Q&A platform, Alodokter, which may introduce some degree of subjectivity across annotators.",
+  "rai:dataBiases": "The dataset covers Indonesian + 6 regional languages (Acehnese, Betawi, Buginese, Javanese, Minangkabau, and Sundanese). Euphemisms were annotated by human annotators using data from an online medical Q&A platform, Alodokter, which may introduce some degree of subjectivity across annotators.",
   "rai:personalSensitiveInformation": "The dataset does not contain any patient identifiers or doctors’ names. No personally identifiable information (PII) is included.",
-  "rai:dataUseCases": "Our dataset can be used to evaluate the ability of LLMs to handle euphemistic questions in women’s sexual and reproductive health across seven Indonesian languages.",
+  "rai:dataUseCases": "Our dataset can be used to evaluate the ability of LLMs to handle euphemistic questions in women’s sexual and reproductive health across Indonesian + 6 regional languages.",
   "rai:dataSocialImpact": "Positive impact: This dataset enables rigorous evaluation of large language models (LLMs) in handling euphemistic expressions in women’s sexual and reproductive health queries, particularly in low-resource Indonesian languages that are often underrepresented in existing benchmarks.\nRisks: The dataset could be misused for generating or interpreting sensitive medical information without proper clinical validation, or for deploying AI systems in healthcare settings without appropriate oversight. Additionally, annotation of euphemisms may involve subjective interpretation across annotators.\nMitigation: The dataset is released under a non-commercial research license (CC BY-NC 4.0) and is intended strictly for research purposes. No personally identifiable information (PII) is included. Users are encouraged to use the dataset responsibly and avoid clinical or high-stakes applications without expert validation.",
   "rai:hasSyntheticData": false,
   "prov:wasDerivedFrom": [
